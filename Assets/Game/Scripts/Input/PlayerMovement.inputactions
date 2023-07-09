@@ -33,10 +33,10 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "UpDown",
-                    "type": "PassThrough",
-                    "id": "4f00bf19-8314-4296-aa30-fdf5a73c0af5",
-                    "expectedControlType": "",
+                    "name": "Jump",
+                    "type": "Button",
+                    "id": "0237db78-cd13-42a5-bcfb-78196739b4f0",
+                    "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
@@ -265,69 +265,25 @@
                 },
                 {
                     "name": "",
-                    "id": "e135b2e4-b099-4ba6-a6fa-36de8840654b",
-                    "path": "<Mouse>/scroll/y",
+                    "id": "0cf052a9-3833-4a96-b6fb-c74b848f63c3",
+                    "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
                     "groups": "Keyboard&Mouse",
-                    "action": "UpDown",
+                    "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
                 },
                 {
-                    "name": "Xbox Bumper",
-                    "id": "6c3ec541-f2d9-43b6-b947-ad0d59398386",
-                    "path": "2DVector(mode=2)",
+                    "name": "",
+                    "id": "5a462ccf-0b4e-485d-8438-fd2115917e95",
+                    "path": "<XInputController>/buttonSouth",
                     "interactions": "",
                     "processors": "",
-                    "groups": "",
-                    "action": "UpDown",
-                    "isComposite": true,
+                    "groups": "Gamepad",
+                    "action": "Jump",
+                    "isComposite": false,
                     "isPartOfComposite": false
-                },
-                {
-                    "name": "Up",
-                    "id": "636e0333-20ae-4669-8234-b7636bd3d36a",
-                    "path": "<XInputController>/rightShoulder",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gamepad",
-                    "action": "UpDown",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "Down",
-                    "id": "0195082c-328a-4818-b0cc-0a4f9c3fcd02",
-                    "path": "<XInputController>/leftShoulder",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "Gamepad",
-                    "action": "UpDown",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "Left",
-                    "id": "e5822c9e-ddcc-496e-b6f8-bbf91eccdb52",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "UpDown",
-                    "isComposite": false,
-                    "isPartOfComposite": true
-                },
-                {
-                    "name": "Right",
-                    "id": "14693041-ba65-4059-b1b3-9a4c61e757e3",
-                    "path": "",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "UpDown",
-                    "isComposite": false,
-                    "isPartOfComposite": true
                 }
             ]
         },

@@ -149,20 +149,26 @@ public class ZombieTargetController : MonoBehaviour
 
     private void move()
     {
+        if (playerInput == null)
+        {
+            playerInput = new PlayerInput();
+            playerInput.Player.Enable();
+        }
+
         // Move the attractor in the direction of the input
         moveInput = playerInput.Player.Move.ReadValue<Vector2>();
-        float scroll = playerInput.Player.UpDown.ReadValue<float>();
+        // float scroll = playerInput.Player.UpDown.ReadValue<float>();
 
         transform.position = Vector3.SmoothDamp(transform.position, transform.position + new Vector3(moveInput.x, 0, moveInput.y) * MoveSpeed * Time.deltaTime, ref velRef, 0);
 
-        if (scroll > 0)
-        {
-            moveInput.z = 1.0f * UpDownSpeed;
-        }
-        else if (scroll < 0)
-        {
-            moveInput.z = -1.0f * UpDownSpeed;
-        }
+        // if (scroll > 0)
+        // {
+        //     moveInput.z = 1.0f * UpDownSpeed;
+        // }
+        // else if (scroll < 0)
+        // {
+        //     moveInput.z = -1.0f * UpDownSpeed;
+        // }
 
         // Move the camera up and down (Cinemachine follow offset)
         cameraFramingTransposer.m_TrackedObjectOffset.z = -(5 + MaxZombieDistance);
